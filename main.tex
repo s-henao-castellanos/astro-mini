@@ -1,0 +1,118 @@
+\documentclass[letterpaper,12pt]{extarticle}
+\usepackage{astro-mini}
+\usepackage{lipsum}
+
+
+\usepackage{array}   % for \newcolumntype macro
+% math-mode version of column types
+\newcolumntype{L}{>{$}l<{$}}
+\newcolumntype{C}{>{$}c<{$}}
+\newcolumntype{R}{>{$}r<{$}}
+
+
+\begin{document}
+
+\begin{center}
+
+    \Large Title
+    
+    \vspace{3mm}
+
+    \large Author
+
+    \large Second Author
+
+    \vspace{3mm}
+    \normalsize 
+\end{center}
+
+
+\section{Introduction}
+
+\lipsum[10-15]
+
+\section{Wake Up Call}
+
+\lipsum*[5-8]
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.44\textwidth]{img/phi21_F12.png}
+    \includegraphics[width=0.44\textwidth]{img/phi31_F12.png}
+    \includegraphics[width=0.44\textwidth]{img/R21_F12.png}
+    \includegraphics[width=0.44\textwidth]{img/R31_F12.png}
+    \caption{
+        Someone or something that looks to be defeated, or nearly so.
+    } \label{fig:fourier-coeff}
+\end{figure}
+
+\section{Cry Over Spilt Milk}
+
+\lipsum[16]
+
+\subsection{On the Same Page}
+
+\lipsum[53]
+
+\begin{table}[H]
+    \centering
+    \caption{
+        Things that go up must eventually return to the earth due to gravity.
+    } \label{tab:non-likelihood}
+    \begin{tabular}{r|CC|CC}
+                    & \multicolumn{2}{c|}{A} & \multicolumn{2}{c}{B} \\ 
+        Method      & m       &  b       & m       & b \\ \hline \hline
+        L2          & -2.9185 &  16.6426 & -3.1038 &  17.2854 \\ 
+        Siegel      & -2.9208 &  16.6408 & -3.2184 &  17.3382 \\ 
+        Theil-Sen   & -2.9275 &  16.6408 & -3.1670 &  17.3382 \\ 
+    \end{tabular}
+\end{table}
+
+
+\lipsum[56-59]
+
+
+
+
+\appendix 
+
+\section{Additional tables and figures}
+
+
+
+
+\begin{table}[H]
+    \centering
+    \caption{Having strong feelings of happiness or satisfaction.} \label{tab:MM}
+    \begin{tabular}{lLL|LCL|LCL}
+        \hline
+        Method & c_1 & c_2 & m  && \sigma_m & b && \sigma_b \\
+        \hline \hline
+        Geman           & 0.612   & 3.787   & -2.922  & \pm & 0.013   & 16.6383 & \pm & 0.0084  \\
+        Hampel          & 0.396   & 1.382   & -2.923  & \pm & 0.013   & 16.6378 & \pm & 0.0081  \\
+        HardThreshold   & 1.041   & 2.795   & -2.924  & \pm & 0.012   & 16.6351 & \pm & 0.0075  \\
+        Tukey           & 1.5476  & 4.685   & -2.923  & \pm & 0.013   & 16.6377 & \pm & 0.0083  \\
+        Welsch          & 0.8165  & 2.985   & -2.922  & \pm & 0.013   & 16.638  & \pm & 0.0084  \\
+        YohaiZamar      & 1.2139  & 3.1806  & -2.9279 & \pm & 0.0077  & 16.6378 & \pm & 0.0049  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+% Bibliography
+
+\nocite{*}%test
+
+\footnotesize
+
+\bibliographystyle{aa_url} % style aa.bst
+\bibliography{global.bib}
+
+
+
+
+\end{document}
+
+
+
+
